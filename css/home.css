@@ -1,8 +1,13 @@
 body{
-    background-image: url("/img/forex.png");
-    background-repeat: none;
+    background-image: url(../img/splash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
+.bg-image{
+   padding: %;
+}
 
 
 
@@ -12,15 +17,8 @@ nav{
 
 
 
-.img1 { 
-    background-image: url("/img/forex.png"); 
+.enroll{
+    font-size: 31px !important;
+    top: 50%;
+    left: 50%;
 }
-.bg-image {
-    /* Full height */
-    height: 100%; 
-    
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
