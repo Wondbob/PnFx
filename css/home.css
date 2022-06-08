@@ -14,7 +14,7 @@ nav{
     top: -100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 999;
-    position: fixed;
+    position: absolute;
 }
 
 
@@ -32,7 +32,7 @@ nav{
   .bg-image {
     /* Full height */
     height: 100%;
-    background-image: url("../img/splash.jpg");
+    background-image: url("../img/tradinggif.gif");
     
     /* Center and scale the image nicely */
     background-position: center;
