@@ -34,3 +34,10 @@ body{
 .socialLinks{
     font-size: 40px;
 }
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+}

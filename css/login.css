@@ -1,0 +1,40 @@
+body, html{
+    height: 100%;
+}
+
+
+
+
+nav{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+.loginSignupForm{
+    background-color: #dbdbdb;
+    padding-left: 0! important;
+    padding-right: 0! important;
+}
+
+form{
+    background-color: white;
+    padding: 10px;
+}
+
+#signup{
+    cursor: pointer;
+}
+,signup{
+
+}
+
+#login{
+    cursor: pointer;
+    background-color: white;
+}
+.login{
+}
