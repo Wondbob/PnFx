@@ -1,10 +1,5 @@
 body{
     background-color: white;
-    margin-left: -17px! important;
-    padding: 0px;
-    border: 0px;
-    font: inherit;
-    vertical-align: baseline;
 }
 
 
@@ -38,6 +33,5 @@ body{
 
 
 footer{
-    position: absolute;
     bottom: 0;
 }
