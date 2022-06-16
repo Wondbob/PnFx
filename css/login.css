@@ -12,8 +12,6 @@ body, html{
 
 
 
-
-
 /* .loginSignupForm{
     background-color: #dbdbdb;
     padding-left: 0! important;
@@ -50,11 +48,22 @@ body, html{
 
 
 
-.loginSignup{
-    
-}
 
 
 .form-check-label{
     color: initial! important;
 }
+
+
+
+.form-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-holder .form-content {
+  position: relative;
+  width: 60%;
+}
+

@@ -49,129 +49,134 @@
           
 
 
-          <section class="container loginSignup">
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
-                      <h4>Login</h4>
-                  </button>
-                  <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
-                      <h4>Signup</h4>
-                  </button>
-                </div>
-              </nav>
-              <div class="tab-content mt-3" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                    <form class="was-validated">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="validationCustom01" placeholder="name@example.com" required>
-                            <label class="form-label" for="validationCustom01">Email address</label>
-                          <div class="invalid-feedback">
-                            Please fill this field
-                          </div>
-                          <div class="valid-feedback">
-                            Looks Good
-                          </div>
+          <div class="form-holder">
+            <div class="form-content">
+              <section class="container loginSignup">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                          <h4>Login</h4>
+                      </button>
+                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                          <h4>Signup</h4>
+                      </button>
+                    </div>
+                  </nav>
+                  <div class="tab-content mt-3" id="nav-tabContent">
+                    <div class="tab-pane fade show active loginTab" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <form class="needs-validation" method="post" novalidate>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="validationCustom01" placeholder="name@example.com" required>
+                                <label class="form-label" for="validationCustom01">Email address</label>
+                              <div class="invalid-feedback">
+                                Please fill this field
+                              </div>
+                              <div class="valid-feedback">
+                                Looks Good
+                              </div>
+    
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                                <label class="form-label" for="floatingPassword">Password</label>
+                                <div class="invalid-feedback">
+                                  Please fill this field
+                                </div>
+                                <div class="valid-feedback">
+                                  Looks Good
+                                </div>  
+                            </div>
+    
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="login">Login</button>
+                          </form>
+                    </div>
 
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                            <label class="form-label" for="floatingPassword">Password: Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</label>
-                            <div class="invalid-feedback">
-                              Please fill this field
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <form class="needs-validation" method="post" novalidate>
+                            <!-- Name input -->
+                            <div class="form-floating mb-3">
+                                <input type="text" id="floatingName" class="form-control" placeholder="Your Surname, First name & Other name" required>
+                                <label class="form-label" for="floatingName">Your Surname, First name & Other name</label>
+                                <div class="invalid-feedback">
+                                  Please fill this field
+                                </div>
+                                <div class="valid-feedback">
+                                  Looks Good
+                                </div> 
                             </div>
-                            <div class="valid-feedback">
-                              Looks Good
-                            </div>  
-                        </div>
-
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary" id="login">Login</button>
-                      </form>
-                </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                    <form class="was-validated">
-                        <!-- Name input -->
-                        <div class="form-floating mb-3">
-                            <input type="text" id="floatingName" class="form-control" placeholder="Your Surname, First name & Other name" required>
-                            <label class="form-label" for="floatingName">Your Surname, First name & Other name</label>
-                            <div class="invalid-feedback">
-                              Please fill this field
+    
+                            <!-- Username input -->
+                            <div class="form-floating mb-3">
+                                <input type="text" id="registerUsername" class="form-control" placeholder="username" required>
+                                <label class="form-label" for="registerUsername">Username</label>
+                                <div class="invalid-feedback">
+                                  Please fill this field
+                                </div>
+                                <div class="valid-feedback">
+                                  Looks Good
+                                </div>
                             </div>
-                            <div class="valid-feedback">
-                              Looks Good
-                            </div> 
-                        </div>
-
-                        <!-- Username input -->
-                        <div class="form-floating mb-3">
-                            <input type="text" id="registerUsername" class="form-control" placeholder="username" required>
-                            <label class="form-label" for="registerUsername">Username: Use a nickname you would like to be called</label>
-                            <div class="invalid-feedback">
-                              Please fill this field
+    
+                            <!-- Email input -->
+                            <div class="form-floating mb-3">
+                                <input type="email" id="registerEmail" class="form-control" placeholder="email" required>
+                                <label class="form-label" for="registerEmail">Email</label>
+                                <div class="invalid-feedback">
+                                  Please fill this field
+                                </div>
+                                <div class="valid-feedback">
+                                  Looks Good
+                                </div>
                             </div>
-                            <div class="valid-feedback">
-                              Looks Good
+    
+                            <!-- Password input -->
+                            <div class="form-floating mb-3">
+                                <input type="password" id="registerPassword" class="form-control" placeholder="password" required>
+                                <label class="form-label" for="registerPassword">Password</label>
+                                <div class="invalid-feedback">
+                                  Please fill this field
+                                </div>
+                                <div class="valid-feedback">
+                                  Looks Good
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- Email input -->
-                        <div class="form-floating mb-3">
-                            <input type="email" id="registerEmail" class="form-control" placeholder="email" required>
-                            <label class="form-label" for="registerEmail">Email</label>
-                            <div class="invalid-feedback">
-                              Please fill this field
+    
+                            <!-- Repeat Password input -->
+                            <div class="form-floating mb-3">
+                                <input type="password" id="registerRepeatPassword" class="form-control" placeholder="password" required>
+                                <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                                <div class="invalid-feedback">
+                                  Please fill this field
+                                </div>
+                                <div class="valid-feedback">
+                                  Looks Good
+                                </div>
                             </div>
-                            <div class="valid-feedback">
-                              Looks Good
+    
+                            <!-- Checkbox -->
+                            <div class="form-check mb-3">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+                                aria-describedby="registerCheckHelpText" required>
+                                <label class="form-check-label" for="registerCheck">
+                                I have read and agree to the terms<br>
+                                By signing up you agree to data processing by the administrator: PnFx. The administrator processes data following the Privacy Policy.
+                                </label>
                             </div>
-                        </div>
-
-                        <!-- Password input -->
-                        <div class="form-floating mb-3">
-                            <input type="password" id="registerPassword" class="form-control" placeholder="password" required>
-                            <label class="form-label" for="registerPassword">Password: Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</label>
-                            <div class="invalid-feedback">
-                              Please fill this field
-                            </div>
-                            <div class="valid-feedback">
-                              Looks Good
-                            </div>
-                        </div>
-
-                        <!-- Repeat Password input -->
-                        <div class="form-floating mb-3">
-                            <input type="password" id="registerRepeatPassword" class="form-control" placeholder="password" required>
-                            <label class="form-label" for="registerRepeatPassword">Repeat password</label>
-                            <div class="invalid-feedback">
-                              Please fill this field
-                            </div>
-                            <div class="valid-feedback">
-                              Looks Good
-                            </div>
-                        </div>
-
-                        <!-- Checkbox -->
-                        <div class="form-check mb-3">
-                            <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck"
-                            aria-describedby="registerCheckHelpText" required>
-                            <label class="form-check-label" for="registerCheck">
-                            I have read and agree to the terms<br>
-                            By signing up you agree to data processing by the administrator: PnFx. The administrator processes data following the Privacy Policy.
-                            </label>
-                        </div>
-
-                        
-
-                        <!-- Submit button -->
-                        <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
-                    </form>
-                </div>
-              </div>
-          </section>
+    
+                            
+    
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+                        </form>
+                    </div>
+                  </div>
+              </section>
+            </div>
+          </div>
 
           
           
@@ -181,6 +186,29 @@
               event.preventDefault()
             });
           </script>
+
+          <!-- JavaScript for disabling form submissions if there are invalid fields -->
+          <script>
+            // Self-executing function
+            (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                        form.addEventListener('submit', function(event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
 
     </body>
 </html>
