@@ -9,8 +9,11 @@ body{
 
 .links{
     list-style-type: none;
+    display: inline-block;
+    text-align-last: center;
 }
 .btn{
+    box-sizing: inherit! important;
     width: -webkit-fill-available;
 }
 
