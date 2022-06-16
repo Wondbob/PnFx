@@ -13,6 +13,7 @@ body{
 
 .links{
     list-style-type: none;
+    display: inline-block;
     text-align-last: center;
 }
 .btn{
