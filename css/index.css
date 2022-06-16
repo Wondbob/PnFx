@@ -3,21 +3,14 @@ body{
 }
 
 
-/* nav{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} */
-
 .logo{
     padding-top: 30px;
 }
 
 .links{
     list-style-type: none;
-    display: inline-block;
-    text-align-last: center;
 }
 .btn{
-    box-sizing: inherit! important;
     width: -webkit-fill-available;
 }
 
